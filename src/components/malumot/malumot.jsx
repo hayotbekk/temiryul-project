@@ -22,10 +22,10 @@ const Malumot = () => {
                         </g>
                     </svg>
                     <p>Korxonaning umumiy ishchilar soni
-Korxonada 626 ta ishchi o'z faoliyatini olib bormoqda.</p>
+                        Korxonada 626 ta ishchi o'z faoliyatini olib bormoqda.</p>
                 </div>
                 <div className="w-[200px] h-[150px] bg-slate-900">
-                <svg className='flex justify-center ' class="w-11 h-11 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                    <svg className='flex justify-center ' class="w-11 h-11 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                         <g fill="none" fill-rule="evenodd">
                             <rect class="fill-current text-blue-600" width="64" height="64" rx="32">
                             </rect>
@@ -42,9 +42,9 @@ Korxonada 626 ta ishchi o'z faoliyatini olib bormoqda.</p>
                         </g>
                     </svg>
                     <p>Korxonaning umumiy ishchilar soni
-Korxonada 626 ta ishchi o'z faoliyatini olib bormoqda.</p>                </div>
+                        Korxonada 626 ta ishchi o'z faoliyatini olib bormoqda.</p>                </div>
                 <div className="w-[200px] h-[150px] bg-slate-900">
-                <svg className='flex justify-center ' class="w-11 h-11 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                    <svg className='flex justify-center ' class="w-11 h-11 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                         <g fill="none" fill-rule="evenodd">
                             <rect class="fill-current text-blue-600" width="64" height="64" rx="32">
                             </rect>
@@ -61,7 +61,7 @@ Korxonada 626 ta ishchi o'z faoliyatini olib bormoqda.</p>                </div>
                         </g>
                     </svg>
                     <p>Korxonaning umumiy ishchilar soni
-Korxonada 626 ta ishchi o'z faoliyatini olib bormoqda.</p>                </div>
+                        Korxonada 626 ta ishchi o'z faoliyatini olib bormoqda.</p>                </div>
             </div>
             <div className="">
                 <div className=""></div>
