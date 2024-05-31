@@ -38,11 +38,7 @@ const Xizmatlar = () => {
                     </div>
                 </div>
             </div>
-            {/* <script>
-          function changeImage(src) {
-            document.getElementById('mainImage').src = src
-          }
-        </script> */}
+   
 
         </div>
     )
