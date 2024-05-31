@@ -6,17 +6,19 @@ import Rahbariyat from './components/Rahbariyat/Rahbariyat'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 
-
 const App = () => {
   return (
     <div>
       <Header/>
       <Hero/>
 
+      <Hero />
+      <Malumot/>
       <Xizmatlar/>
       <Rahbariyat/>
       <Contact/>
       <Footer/>
+
 
     </div>
   )

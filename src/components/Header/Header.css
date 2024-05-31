@@ -1,0 +1,18 @@
+.menu-open{
+    justify-content: center;
+    align-items: center;
+    display: none;
+    /* border: none; */
+    background: none;
+}
+.menu{
+    color: red;
+}
+.menu-open .open ul{
+    background: none;
+}
+.btn{
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 5px;
+}
