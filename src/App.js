@@ -1,26 +1,10 @@
 import React from 'react'
-import Header from './components/Header/Header'
-// import Hero from './components/Hero'
-import Hero from './components/Hero/Hero'
-import Xizmatlar from './components/Xizmatlar/Xizmatlar'
-import Rahbariyat from './components/Rahbariyat/Rahbariyat'
-import Contact from './components/Contact/Contact'
-import Footer from './components/Footer/Footer'
-
+import Home from './Page/Home/Home'
 
 const App = () => {
   return (
     <div>
-      <Header/>
-      <Hero/>
-
-      {/* <Malumot/> */}
-      <Xizmatlar/>
-      <Rahbariyat/>
-      <Contact/>
-      <Footer/>
-
-
+      <Home/>
     </div>
   )
 }
