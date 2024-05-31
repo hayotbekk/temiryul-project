@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <div className='flex flex-col min-h-screen overflow-hidden'>
+    <div className=''>
       <nav className='block w-full shadow-md backdrop-saturate-200 backdrop-blur-2xl bg-opacity-80 border border-white/80 bg-white text-white fixed z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 '>
         <div className="flex items-center justify-between text-blue-gray-900">
           <a href="#" className='antialiased font-sans text-base font-light leading-relaxed mr-4 cursor-pointer flex justify-start items-center my-0 py-0 text-blue-500'>
@@ -55,21 +55,24 @@ const Header = () => {
               </ul>
             </div>
             <div className="">
-              <button class="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none max-w-[40px] max-h-[40px] rounded-lg text-xs ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden" type="button" onClick={toggleMenu}>
+              <button class="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none max-w-[40px] max-h-[40px] rounded-lg text-xs ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden" type="button" >
                 <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform">
-                  <img className='menu'  src={hamburger} alt="" /> 
+                  <img className='menu w-10 h- text-black' onClick={toggleMenu} src={hamburger} alt="" /> 
                 </span>
               </button>
             </div>
           </div>
         </div>
-        <div className={`menu-open${menu ? 'open' : ''}`}> {/* Add the open class conditionally */}
-          <ul className='bg-white flex justify-center text-black'>
-            <li className='p-4'><a href="#">BOSH SAHIFA</a></li>
+        <br />
+        <div className={`menu-open${menu ? 'open' : ''}`}> 
+        <hr />{/* Add the open class conditionally */}
+          <ul className='bg-none flex flex-col hover: text-black  lg:hidden'>
+            <li className='p-4 lg:text-red'><a href="#">BOSH SAHIFA</a></li>
             <li className='p-4'><a href="#">TARIXI</a></li>
             <li className='p-4'><a href="#">VAZIFA</a></li>
             <li className='p-4'><a href="#">RAHBARIYAT</a></li>
             <li className='p-4'><a href="#">BOGLANISH</a></li>
+            <button className="bg-black text-white w-15 h-10 btn">kirish</button>
           </ul>
         </div>
       </nav>
@@ -77,4 +80,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;
