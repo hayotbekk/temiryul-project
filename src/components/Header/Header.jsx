@@ -1,12 +1,7 @@
-<<<<<<< HEAD:src/components/Header/index.jsx
-import React, { useState } from 'react';
-import "./style.css"
-import hamburger from '../images/Group 2.svg';
 
-=======
-import React from 'react'
+import React, { useState } from 'react';
+import hamburger from '../images/Group 2.svg';
 import "./Header.css"
->>>>>>> 78b1420bdd72939c0da061c8c0ce0ee1357a9818:src/components/Header/Header.jsx
 const Header = () => {
   const [menu, setMenu] = useState(false);
 
@@ -82,4 +77,4 @@ const Header = () => {
   )
 }
 
-export default Header;
+export default Header

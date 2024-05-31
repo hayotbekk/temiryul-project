@@ -1,15 +1,14 @@
 import React from 'react'
-import Header from './components/Header/Header'
 import Hero from './components/Hero'
-import Footer from './components/Footer'
+import Header from './components/Header/Header'
 import Malumot from './components/malumot/malumot'
-import Footer from './components/Footer/Footer'
 import Xizmatlar from './components/Xizmatlar/Xizmatlar'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
     <div>
-      <Header />
+      <Header/>
       <Hero />
       <Malumot/>
       <Xizmatlar/>
