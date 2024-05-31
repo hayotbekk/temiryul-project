@@ -1,5 +1,5 @@
 import React from 'react'
-import "./style.css"
+import "./Header.css"
 const Header = () => {
   return (
     <div className='flex flex-col min-h-screen overflow-hidden'>

@@ -4,7 +4,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 const Hero = () => {
   return (
     <div className=''>
-      
+      Hero
     </div>
   )
 }
