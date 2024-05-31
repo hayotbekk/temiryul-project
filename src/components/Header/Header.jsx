@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import hamburger from '../images/Group 2.svg';
+import hamburger from '../images/pngwing.com.png';
 import "./Header.css"
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -14,7 +14,7 @@ const Header = () => {
       <nav className='block w-full shadow-md backdrop-saturate-200 backdrop-blur-2xl bg-opacity-80 border border-white/80 bg-white text-white fixed z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 '>
         <div className="flex items-center justify-between text-blue-gray-900">
           <a href="#" className='antialiased font-sans text-base font-light leading-relaxed mr-4 cursor-pointer flex justify-start items-center my-0 py-0 text-blue-500'>
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="60" viewBox="0 0 172.000000 135.000000" preserveAspectRatio="xMidYMid meet" class="scale-125">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="60" viewBox="0 0 172.000000 135.000000" preserveAspectRatio="xMidYMid meet" class="scale-125">
               <metadata>Created by potrace 1.16, written by Peter Selinger 2001-2019</metadata>
               <g transform="translate(0.000000,135.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
                 <path d="M683 1166 c-285 -69 -478 -368 -420 -651 48 -232 217 -403 447 -451
@@ -57,7 +57,7 @@ const Header = () => {
             <div className="">
               <button class="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none max-w-[40px] max-h-[40px] rounded-lg text-xs ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden" type="button" >
                 <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform">
-                  <img className='menu w-10 h- text-black' onClick={toggleMenu} src={hamburger} alt="" /> 
+                  <img className='menu w-[500px] cursor-pointer text-black' onClick={toggleMenu} src={hamburger} alt="" /> 
                 </span>
               </button>
             </div>
