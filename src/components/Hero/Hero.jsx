@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Hero.css"
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 const Hero = () => {
   
