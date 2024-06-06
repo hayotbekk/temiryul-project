@@ -1,7 +1,8 @@
-
 import React, { useState } from 'react';
 import hamburger from '../images/pngwing.com.png';
 import "./Header.css"
+import { Route, Routes, Link } from 'react-router-dom';
+import LoginPage from '../../Login/LoginPage/LoginPage';
 const Header = () => {
   const [menu, setMenu] = useState(false);
 
@@ -14,7 +15,7 @@ const Header = () => {
       <nav className='block w-full shadow-md backdrop-saturate-200 backdrop-blur-2xl bg-opacity-80 border border-white/80 bg-white text-white fixed z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 '>
         <div className="flex items-center justify-between text-blue-gray-900">
           <a href="#" className='antialiased font-sans text-base font-light leading-relaxed mr-4 cursor-pointer flex justify-start items-center my-0 py-0 text-blue-500'>
-          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="60" viewBox="0 0 172.000000 135.000000" preserveAspectRatio="xMidYMid meet" class="scale-125">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="60" viewBox="0 0 172.000000 135.000000" preserveAspectRatio="xMidYMid meet" class="scale-125">
               <metadata>Created by potrace 1.16, written by Peter Selinger 2001-2019</metadata>
               <g transform="translate(0.000000,135.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
                 <path d="M683 1166 c-285 -69 -478 -368 -420 -651 48 -232 217 -403 447 -451
@@ -31,6 +32,7 @@ const Header = () => {
                   399 276 -10 9 -311 140 -322 140 -4 0 -101 -62 -215 -139z"></path>
               </g>
             </svg>
+
             <h6 class="block antialiased tracking-normal font-sans text-base font-semibold leading-relaxed text-inherit ms-1.5 mt-1">Railway Plan</h6>
           </a>
           <div className="flex  items-center gap-4">
@@ -51,31 +53,39 @@ const Header = () => {
                 <li className='block antialiased font-sans text-base leading-relaxed text-blue-gray-900 p-1 font-normal'>
                   <a href="#" className='flex items-center'>BOGLANISH</a>
                 </li>
-                <button class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none" type="button">Kirish</button>
+                <Link to='/loginPage'>
+                  <button class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none" type="button">Kirish</button>
+                </Link>
               </ul>
             </div>
             <div className="">
+
               <button class="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none max-w-[40px] max-h-[40px] rounded-lg text-xs ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden" type="button" >
                 <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform">
-                  <img className='menu w-[500px] cursor-pointer text-black' onClick={toggleMenu} src={hamburger} alt="" /> 
+                  <img className='menu w-[500px] cursor-pointer text-black' onClick={toggleMenu} src={hamburger} alt="" />
                 </span>
               </button>
             </div>
           </div>
         </div>
         <br />
-        <div className={`menu-open${menu ? 'open' : ''}`}> 
-        <hr />{/* Add the open class conditionally */}
+        <div className={`menu-open${menu ? 'open' : ''}`}>
+          <hr />{/* Add the open class conditionally */}
           <ul className='bg-none flex flex-col hover: text-black  lg:hidden'>
             <li className='p-4 lg:text-red'><a href="#">BOSH SAHIFA</a></li>
             <li className='p-4'><a href="#">TARIXI</a></li>
             <li className='p-4'><a href="#">VAZIFA</a></li>
             <li className='p-4'><a href="#">RAHBARIYAT</a></li>
             <li className='p-4'><a href="#">BOGLANISH</a></li>
-            <button className="bg-black text-white w-15 h-10 btn">kirish</button>
+
+            <Link to='/loginPage'>
+              <button className="bg-black text-white w-15 h-10 btn">kirish</button>
+            </Link>
           </ul>
         </div>
       </nav>
+
+
     </div>
   )
 }
